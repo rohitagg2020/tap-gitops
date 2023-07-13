@@ -1,0 +1,6 @@
+---
+tap_install:
+  values:
+    ceip_policy_disclosed: true
+    shared:
+      ingress_domain: "psapna.aks.full.cloudfocused.in"
