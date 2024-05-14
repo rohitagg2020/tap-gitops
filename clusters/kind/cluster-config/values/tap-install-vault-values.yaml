@@ -1,0 +1,15 @@
+---
+tap_install:
+  secrets:
+    eso:
+      vault:
+        server: http://127.0.0.1:8200
+        namespace: ""
+        auth:
+          kubernetes:
+            mountPath: kind
+            role: kind--tap-install-secrets
+      remote_refs:
+        tap_sensitive_values:
+          sensitive_tap_values_yaml:
+            key: kv-v2/dev/kind/tap/sensitive-values.yaml
